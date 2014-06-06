@@ -1,0 +1,10 @@
+*.sublime*
+.DS_Store
+node_modules/
+merges/*
+platforms/*
+!platforms/.gitignore
+plugins/*
+www/components/*
+www/css
+www/js
