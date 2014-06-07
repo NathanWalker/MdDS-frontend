@@ -1,0 +1,79 @@
+
+@import 'global/variables';
+
+@import 'global/mixins';
+@import 'global/easing';
+@import 'global/helpers';
+
+@import 'brand/fonts';
+@import 'brand/colors';
+
+@import 'main/tags';
+@import 'main/intro';
+
+
+.bar.bar-positive {
+  background: @color-primary-1;
+}
+
+body,
+.ionic-body {
+  font-family: 'Maven Pro', sans-serif;
+  color: #666;
+}
+
+.bar .title {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.summary {
+  padding: 15px;
+  font-size: 15px;
+}
+
+.list {
+
+  .item {
+    color: inherit;
+    background: #fff;
+    border-color: #eee;
+
+    .header {
+      .clearfix;
+      margin-bottom: 0px;//@base-quarter;
+    }
+
+    .category-icon {
+      .border-radius(3px);
+      float: right;
+      margin-left: @base-quarter;
+      background: @color-secondary-a-2;
+      height: @base-half;
+    }
+
+    .name {
+      .ellipsis;
+      color: @color-primary-1;
+      font-size: 16px;
+      line-height: @base-half;
+      font-weight: 700;
+      font-family: 'Arvo', serif;
+      //font-family: "MavenProBold";
+      //letter-spacing: -.2px;
+    }
+
+    .address {
+      .ellipsis;
+      font-size: 14px;
+      line-height: 1.333;
+    }
+
+    .meta {
+      .ellipsis;
+      font-size: 14px;
+      line-height: 1.333;
+    }
+  }
+}

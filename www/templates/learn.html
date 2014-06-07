@@ -1,0 +1,15 @@
+<ion-view title="Learn">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <div class="summary">
+      <strong>MdDS</strong> (Mal de debarquement, or disembarkment syndrome) is a rare condition usually occurring after a cruise, aircraft flight, or other sustained motion event. It has only recently received attention and very little scientific research has been conducted. Explore these resources to learn more.
+    </div>
+    <ion-list>
+      <ion-item ng-repeat="res in resources" href="#/app/learn/{{res.id}}">
+        {{res.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

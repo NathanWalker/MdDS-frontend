@@ -40,6 +40,9 @@ For now, install manually with the following:
     cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-vibration.git
     cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git
 
+#####Build out www
+
+    gulp
 
 #####If you want to preview the build in a browser, you can `cd` into `/www` and run:
 

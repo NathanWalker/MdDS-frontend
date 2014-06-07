@@ -1,7 +1,21 @@
 {
-  "name": "HelloIonic",
-  "private": "true",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.6"
+  "name": "MdDS",
+  "version":"1.0.0",
+  "homepage": "https://github.com/NathanWalker/MdDS-frontend",
+  "authors": [
+    "Kylie Streed <kyliestreed@gmail.com>",
+    "Nathan Walker <walkerrunpdx@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "store.js": "~1",
+    "ionic": "~1"
   }
 }

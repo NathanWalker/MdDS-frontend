@@ -1,0 +1,120 @@
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+  //background: red;
+    width: 100%;
+  height: 100%;
+}
+
+.page-intro {
+  background: @color-primary-1;
+
+  .side-padding {
+    padding-left: @base-half;
+  }
+
+  .login-screen {
+    top: 17.5%;
+    position: absolute;
+
+    h3 {
+      color: white;
+      line-height: 2;
+      font-family: "proximanova";
+      font-weight: 400;
+      font-size: @base-half;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .button {
+    .border-radius(5px);
+    font-family: "proximanova-bold";
+    font-weight: 400;
+    font-size: @base-half;
+    line-height: 2;
+    z-index: 10;
+
+    &,
+    &:hover,
+    &:active {
+      background: transparent;
+      border: solid 1px rgba(0, 0, 0, .2);
+      color: white;
+    }
+
+    &:hover,
+    &:active {
+      .box-shadow(none);
+    }
+  }
+
+  .button-skip-intro {
+    //#ease .easeInQuad(0);
+      #ease .easeInQuad(150ms);
+    position: absolute;
+    bottom: @base-half;
+    left: @base-half;
+
+    &.hidden {
+      .opacity(0);
+    }
+  }
+
+  .dot-nav {
+    //#ease .easeInQuad(0);
+      #ease .easeInQuad(150ms);
+    width: 70%;
+    margin: auto;
+    color: rgba(0, 0, 0, .15);
+    //height: 100px;
+    //background: red;
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
+    text-align: center;
+
+    &.hidden {
+      .opacity(0);
+    }
+
+    .dot {
+      #ease .easeInQuad(250ms);
+      display: inline-block;
+      font-size: 45px;
+      width: 20%;
+
+      &.active {
+        #ease .easeInQuad(0);
+        color: @color-secondary-a-1;
+      }
+    }
+  }
+}
+
+.swipePanel {
+
+  .poster {
+    position: absolute;
+    top: 12.5%;
+    width: 100%;
+  }
+}
