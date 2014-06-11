@@ -1,29 +1,37 @@
 <ion-side-menus>
 
   <ion-pane ion-side-menu-content>
-    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    <ion-nav-bar class="bar-positive nav-title-slide-ios7">
       <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
     </ion-nav-bar>
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
   <ion-side-menu side="left">
-    <!-- <header class="bar bar-header bar-stable">
-      <h1 class="title"></h1>
-    </header> -->
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">MdDS</h1>
+    </header>
     <ion-content class="has-header">
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/learn">
+        <ion-item nav-clear menu-close href="#/app/learn" class="item item-icon-left">
+          <i class="icon ion-help-circled"></i>
           Learn
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/videos">
-          Videos
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/stories">
+        <ion-item nav-clear menu-close href="#/app/stories" class="item item-icon-left">
+          <i class="icon ion-document-text"></i>
           Stories
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/forum">
+        <ion-item nav-clear menu-close href="#/app/videos" class="item item-icon-left">
+          <i class="icon ion-ios7-videocam"></i>
+          Videos
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/forum" class="item item-icon-left">
+          <i class="icon ion-chatbubbles"></i>
           Forum
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/donate" class="item item-icon-left">
+          <i class="icon ion-heart"></i>
+          Donate
         </ion-item>
       </ion-list>
     </ion-content>

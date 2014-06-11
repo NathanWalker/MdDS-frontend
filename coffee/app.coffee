@@ -1,5 +1,5 @@
 # The angular app. It all starts here!
-app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Learn'])
+app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Learn', 'Story'])
 .config(['$provide', '$compileProvider', '$sceProvider', ($provide, $compileProvider, $sceProvider) ->
   $provide.decorator '$rootScope', ['$delegate', ($delegate) ->
     $delegate.safeApply = (fn) ->
@@ -22,26 +22,35 @@ app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Lear
 .controller('AppCtrl', ($scope) -> return )
 .controller('LearnCtrl', ($scope) ->
   $scope.resources = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+
   ]
 )
 .controller('DetailCtrl', ($scope, $stateParams, $window) -> $window.alert($stateParams.learnId) )
 
 .controller("VideoCtrl", ($scope, $stateParams, $window) -> )
 
-.controller("StoryCtrl", ($scope, $stateParams, $window) -> )
+.controller("StoryCtrl", ($scope, $stateParams, $rootScope, $window, Stories) ->
+  $scope.stories = Stories.stories
+  $scope.viewDetail = (story) ->
+    $rootScope.changeState("/stories/#{story.id}")
+)
+
+.controller("StoryDetailCtrl", ($scope, $stateParams, $window, Stories) ->
+  if $stateParams.storyId
+    $scope.story = Stories.storyById(+$stateParams.storyId)
+)
 
 .controller("ForumCtrl", ($scope, $stateParams, $window) -> )
 
-.run(['$rootScope', '$window', '$ionicPlatform', '$ionicNavBarDelegate', ($rootScope, $window, $ionicPlatform, $ionicNavBarDelegate) ->
+.controller("DonateCtrl", ($scope, $stateParams, $window) -> )
+
+.run(['$rootScope', '$window', '$ionicPlatform', '$ionicNavBarDelegate', '$state', '$location', ($rootScope, $window, $ionicPlatform, $ionicNavBarDelegate, $state, $location) ->
 
   # globals
   $rootScope.goBack = -> $ionicNavBarDelegate.back()
+
+  $rootScope.changeState = (state) ->
+    $location.url("/app#{state}")
 
   $ionicPlatform.ready ->
     $window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true)  if $window.cordova and $window.cordova.plugins.Keyboard

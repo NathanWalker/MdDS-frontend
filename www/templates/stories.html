@@ -3,6 +3,14 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <h1>Stories</h1>
+    <!-- <h1>Stories</h1> -->
+    <div class="list card">
+
+      <a ng-click="viewDetail(story)" class="item item-icon-left" ng-repeat="story in stories">
+        <i class="icon ion-document-text"></i>
+        {{story.title}}
+      </a>
+
+    </div>
   </ion-content>
 </ion-view>

@@ -12,6 +12,12 @@ app.config ($stateProvider, $urlRouterProvider) ->
       menuContent:
         templateUrl: "templates/videos.html"
         controller: "VideoCtrl"
+  ).state("app.storyDetail",
+    url: "/stories/:storyId"
+    views:
+      menuContent:
+        templateUrl: "templates/story.html"
+        controller: "StoryDetailCtrl"
   ).state("app.stories",
     url: "/stories"
     views:
@@ -24,6 +30,12 @@ app.config ($stateProvider, $urlRouterProvider) ->
       menuContent:
         templateUrl: "templates/forum.html"
         controller: "ForumCtrl"
+  ).state("app.donate",
+    url: "/donate"
+    views:
+      menuContent:
+        templateUrl: "templates/donate.html"
+        controller: "DonateCtrl"
   ).state("app.learn",
     url: "/learn"
     views:

@@ -19,70 +19,70 @@ console.log("HOOK: Copying icons into platform");
 
 var filestocopy = [{
     "platform_res/ios/Resources/icons/icon-40.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-40.png"
+    "platforms/ios/MdDS/Resources/icons/icon-40.png"
 }, {
     "platform_res/ios/Resources/icons/icon-40@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-40@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon-40@2x.png"
 }, {
     "platform_res/ios/Resources/icons/icon-50.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-50.png"
+    "platforms/ios/MdDS/Resources/icons/icon-50.png"
 }, {
     "platform_res/ios/Resources/icons/icon-50@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-50@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon-50@2x.png"
 }, {
     "platform_res/ios/Resources/icons/icon-60.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-60.png"
+    "platforms/ios/MdDS/Resources/icons/icon-60.png"
 }, {
     "platform_res/ios/Resources/icons/icon-60@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-60@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon-60@2x.png"
 }, {
     "platform_res/ios/Resources/icons/icon-72.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-72.png"
+    "platforms/ios/MdDS/Resources/icons/icon-72.png"
 }, {
     "platform_res/ios/Resources/icons/icon-72@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-72@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon-72@2x.png"
 }, {
     "platform_res/ios/Resources/icons/icon-76.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-76.png"
+    "platforms/ios/MdDS/Resources/icons/icon-76.png"
 }, {
     "platform_res/ios/Resources/icons/icon-76@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-76@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon-76@2x.png"
 }, {
     "platform_res/ios/Resources/icons/icon-small.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-small.png"
+    "platforms/ios/MdDS/Resources/icons/icon-small.png"
 }, {
     "platform_res/ios/Resources/icons/icon-small@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon-small@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon-small@2x.png"
 }, {
     "platform_res/ios/Resources/icons/icon.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon.png"
+    "platforms/ios/MdDS/Resources/icons/icon.png"
 }, {
     "platform_res/ios/Resources/icons/icon@2x.png":
-    "platforms/ios/Tip for Tip/Resources/icons/icon@2x.png"
+    "platforms/ios/MdDS/Resources/icons/icon@2x.png"
 }, {
     "platform_res/ios/Resources/splash/Default-568h@2x~iphone.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default-568h@2x~iphone.png"
+    "platforms/ios/MdDS/Resources/splash/Default-568h@2x~iphone.png"
 }, {
     "platform_res/ios/Resources/splash/Default-Landscape@2x~ipad.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default-Landscape@2x~ipad.png"
+    "platforms/ios/MdDS/Resources/splash/Default-Landscape@2x~ipad.png"
 }, {
     "platform_res/ios/Resources/splash/Default-Landscape~ipad.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default-Landscape~ipad.png"
+    "platforms/ios/MdDS/Resources/splash/Default-Landscape~ipad.png"
 }, {
     "platform_res/ios/Resources/splash/Default-Portrait@2x~ipad.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default-Portrait@2x~ipad.png"
+    "platforms/ios/MdDS/Resources/splash/Default-Portrait@2x~ipad.png"
 }, {
     "platform_res/ios/Resources/splash/Default-Portrait~ipad.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default-Portrait~ipad.png"
+    "platforms/ios/MdDS/Resources/splash/Default-Portrait~ipad.png"
 }, {
     "platform_res/ios/Resources/splash/Default.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default.png"
+    "platforms/ios/MdDS/Resources/splash/Default.png"
 }, {
     "platform_res/ios/Resources/splash/Default@2x~iphone.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default@2x~iphone.png"
+    "platforms/ios/MdDS/Resources/splash/Default@2x~iphone.png"
 }, {
     "platform_res/ios/Resources/splash/Default~iphone.png":
-    "platforms/ios/Tip for Tip/Resources/splash/Default~iphone.png"
+    "platforms/ios/MdDS/Resources/splash/Default~iphone.png"
 }];
 
 var fs = require('fs');
