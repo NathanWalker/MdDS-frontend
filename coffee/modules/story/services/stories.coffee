@@ -12,6 +12,18 @@ angular.module("Story").provider("Stories", ->
     api.stories = [
       {
         id:1
+        title:"Kylie Streed"
+        pic:"img/stories/kylie.jpg"
+        content:'''Almost six years ago, at the tender age of 25, I was struck with MdDS. I had spent several days on Lake Shasta in a house boat. I'd been on boats many times prior to this without incident. Those few days were fun-filled and relaxing. However, upon reaching dry land, I soon realized that I would be stuck on that house boat (so to speak) for quite a while. Five weeks after that fateful boat trip, my symptoms of swaying, bobbing and rocking abruptly came to a stop.
+<br/><br/>
+Since that time, I've endured six more episodes of MdDS, all ranging from six to nine weeks. Currently, I've "been on a boat" since April 1st, 2012. I've tried benzodiazepines, antidepressants, herbal supplements, acupuncture, miofascial release, chiropractic work, meditation, water therapy and even a full blown inner ear surgery that put me out of work and on strict bed rest for six weeks. I will share this bit about treatment: I have been taking Sertraline (Zoloft) for the last six months. This is the only therapy that has made my symptoms manageable and I'm grateful every day for this discovery.
+<br/><br/>
+This Fall, I'm going to participate in a study headed by Dr. Cha at the Laureate Brain Institute in Tulsa, Oklahoma. She has had some promising results, and I look forward to lending myself to further the efforts to find a cure.
+<br/><br/>
+Thank you for taking the time to look through this app. Together, we will conquer this.'''
+      },
+      {
+        id:2
         title:"Karen"
         content:'''I am a stay at home mom with three kids and a wonderfully supportive husband. We live in Denver, CO and as a family, ski 40 plus days a year. I can rip it up on a double black diamond ski slopes and telemark ski. Ironically, when I stop skiing to adjust a buckle on my ski boot, I fall over. On average, I bike 100 miles a week. However, I have difficulty walking my dog without my REI trekking poles or even walking to the bathroom because I get too dizzy. I love to swim with my kids, but I cannot play board games or help them with homework. I also find going to the grocery store almost impossible because I get too disoriented and dizzy there. I have had Mal de Disembarquement syndrome (MdDS) for 23 years, but was only diagnosed six months ago.
         <br/><br/>
@@ -69,7 +81,7 @@ June, 2011<br/>
 updated, August, 2011'''
       },
       {
-        id:2
+        id:3
         title:"Arianne Daume"
         content:'''My name is Arianne Daume. I am a 32 year old homemaker of a 5 and 7 year old boys.  Eight years ago, I went on a 7 day cruise and came back walking into walls and dizzy. I was misdiagnosed with labrynthitis and, finally after 3 weeks, was placed on steroids, and it seemed to fix me or so I thought.
         <br/><br/>
@@ -79,9 +91,9 @@ MdDS has affected everything in my life. In the beginning, I had to rely on neig
 This syndrome has taken a lot from our family, but we are hanging in there. I think my husband finally had his eyes opened this past week when I was hospitalized and had gone down 20 pounds. Hopefully time will help get me into remission, but I am very frustrated that it is taking a lot longer than I want.'''
       },
       {
-        id:3
-        title:"Kylie Streed"
-        content:'''Need Kylie's full story.'''
+        id:4
+        title:"More coming soon..."
+        content:"coming soon..."
       }
     ]
 

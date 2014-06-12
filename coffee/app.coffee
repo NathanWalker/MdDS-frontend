@@ -1,5 +1,5 @@
 # The angular app. It all starts here!
-app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Learn', 'Story'])
+app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Learn', 'Story', 'Video'])
 .config(['$provide', '$compileProvider', '$sceProvider', ($provide, $compileProvider, $sceProvider) ->
   $provide.decorator '$rootScope', ['$delegate', ($delegate) ->
     $delegate.safeApply = (fn) ->
@@ -27,7 +27,11 @@ app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Lear
 )
 .controller('DetailCtrl', ($scope, $stateParams, $window) -> $window.alert($stateParams.learnId) )
 
-.controller("VideoCtrl", ($scope, $stateParams, $window) -> )
+.controller("VideoCtrl", ($scope, $stateParams, $window, Videos, inappbrowser) ->
+  $scope.videos = Videos.list
+  $scope.viewDetail = (video) ->
+    inappbrowser.open(video.url)
+)
 
 .controller("StoryCtrl", ($scope, $stateParams, $rootScope, $window, Stories) ->
   $scope.stories = Stories.stories
@@ -44,13 +48,20 @@ app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Lear
 
 .controller("DonateCtrl", ($scope, $stateParams, $window) -> )
 
-.run(['$rootScope', '$window', '$ionicPlatform', '$ionicNavBarDelegate', '$state', '$location', ($rootScope, $window, $ionicPlatform, $ionicNavBarDelegate, $state, $location) ->
+.controller("AboutCtrl", ($scope, $stateParams, $window) -> )
+
+.controller("SupportCtrl", ($scope, $stateParams, $window) -> )
+
+.run(['$rootScope', '$window', '$ionicPlatform', '$ionicNavBarDelegate', '$state', '$location', 'inappbrowser', ($rootScope, $window, $ionicPlatform, $ionicNavBarDelegate, $state, $location, inappbrowser) ->
 
   # globals
   $rootScope.goBack = -> $ionicNavBarDelegate.back()
 
   $rootScope.changeState = (state) ->
     $location.url("/app#{state}")
+
+  $rootScope.openLink = (link) ->
+    inappbrowser.open(link)
 
   $ionicPlatform.ready ->
     $window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true)  if $window.cordova and $window.cordova.plugins.Keyboard
