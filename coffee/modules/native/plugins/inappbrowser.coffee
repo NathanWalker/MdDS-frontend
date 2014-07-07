@@ -33,7 +33,7 @@ angular.module('inappbrowser', ['ionic'])
 
     api.open = (url, options, closeUrl) ->
       q = $q.defer()
-      opt = "location=no"
+      opt = "location=no,enableViewportScale=yes"
       if options
         for key of options
           opt += ",#{key}=#{options[key]}"

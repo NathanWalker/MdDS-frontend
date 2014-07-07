@@ -54,6 +54,12 @@ app.config ($stateProvider, $urlRouterProvider) ->
       menuContent:
         templateUrl: "templates/support.html"
         controller: "SupportCtrl"
+  ).state("app.press",
+    url: "/press"
+    views:
+      menuContent:
+        templateUrl: "templates/press.html"
+        controller: "PressCtrl"
   ).state "app.single",
     url: "/learn/:learnId"
     views:

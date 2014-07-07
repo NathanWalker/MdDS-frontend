@@ -1,5 +1,5 @@
 # The angular app. It all starts here!
-app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Learn', 'Story', 'Video'])
+app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Learn', 'Story', 'Video', 'Press'])
 .config(['$provide', '$compileProvider', '$sceProvider', ($provide, $compileProvider, $sceProvider) ->
   $provide.decorator '$rootScope', ['$delegate', ($delegate) ->
     $delegate.safeApply = (fn) ->
@@ -51,6 +51,10 @@ app = angular.module('MDDSApp', ['ionic', 'nativePlugins', 'Core', 'User', 'Lear
 .controller("AboutCtrl", ($scope, $stateParams, $window) -> )
 
 .controller("SupportCtrl", ($scope, $stateParams, $window) -> )
+
+.controller("PressCtrl", ($scope, $stateParams, $window, PressList) ->
+  $scope.presslist = PressList.list
+)
 
 .run(['$rootScope', '$window', '$ionicPlatform', '$ionicNavBarDelegate', '$state', '$location', 'inappbrowser', ($rootScope, $window, $ionicPlatform, $ionicNavBarDelegate, $state, $location, inappbrowser) ->
 
